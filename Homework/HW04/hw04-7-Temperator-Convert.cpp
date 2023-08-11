@@ -17,18 +17,17 @@
 #include <stdio.h>
 
 int main() {
-    int  celsius ;
-    float fahrenheit;
+    float celsius, fahrenheit;
 
     // รับอุณหภูมิจากผู้ใช้ในหน่วยเซลเซียส
-    printf("User input : ");
-    scanf("%d", &celsius);
+    printf("User input :\n");
+    scanf("%f", &celsius);
 
     // แปลงจากเซลเซียสเป็นฟาเรนไฮต์
     fahrenheit = (celsius * 9 / 5) + 32;
 
     // แสดงผลลัพธ์
-    printf("%d degree Celsius = %0.1f degree Fahrenheit\n", celsius, fahrenheit);
+    printf("%.2f degree Celsius = %.2f degree Fahrenheit\n", celsius, fahrenheit);
 
     return 0;
 }
